@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="description" content="" />
+    <style>
+        body,
+        html {
+            font-family: Helvetica, sans-serif;
+            font-size: 16px;
+        }
+        
+        #Tablero td {
+            border: thin solid black;
+            font-size: 300%;
+            height: 1em;
+            padding: 1em;
+            width: 1em;
+        }
+        
+        h1 {
+            color: #FF0000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>juego Tateti</h1>
+    <h2> </h2>
+    <section id="global">
+        <section id="principal">
+            <div id="comandos">
+                <form>
+                    <label for="jugador1">Jugador Uno: </label>
+                    <br/>
+                    <input type="text" id="jugador1">
+                    <br/>
+                    <label for="jugador2">Jugador Dos: </label>
+                    <br/>
+                    <input type="text" id="jugador2">
+                    <input type="button" id="empezar" value="Empezar"></input>
+                    <input type="button" id="recargar" value="Revancha!" />
+                    <hr>
+                </form>
+            </div>
+            <table id="Tablero" cellspacing="0">
+                <tr>
+                    <td id="c1" class="Tablero"></td>
+                    <td id="c2" class="Tablero"></td>
+                    <td id="c3" class="Tablero"></td>
+                </tr>
+                <tr>
+                    <td id="c4" class="Tablero"></td>
+                    <td id="c5" class="Tablero"></td>
+                    <td id="c6" class="Tablero"></td>
+                </tr>
+                <tr>
+                    <td id="c7" class="Tablero"></td>
+                    <td id="c8" class="Tablero"></td>
+                    <td id="c9" class="Tablero"></td>
+                </tr>
+            </table>
+            <script src="app.js"></script>
+</body>
+
+</html>
